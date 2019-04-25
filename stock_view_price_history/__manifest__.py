@@ -4,7 +4,7 @@
 {
     "name": "Stock View Price History",
     "summary": "View with the changes of the price in a product",
-    "version": "11.0.1.0.0",
+    "version": "12.0.1.0.0",
     "category": "Stock",
     "website": "https://www.qubiq.es",
     "author": "QubiQ",
@@ -15,7 +15,7 @@
     ],
     "data": [
         "views/stock_history_cost_view.xml",
-	"views/product_view.xml",
+        "views/product_view.xml",
     ],
     "application": False,
     "installable": True,
