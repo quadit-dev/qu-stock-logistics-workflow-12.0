@@ -1,0 +1,12 @@
+<odoo>
+  <record id="price_history_button" model="ir.ui.view">
+        <field name="name">price_history_id_form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('oe_button_box')]" position="inside">
+                <button class="oe_stat_button" icon="fa-archive"></button>
+            </xpath>
+        </field>
+    </record>
+</odoo>
