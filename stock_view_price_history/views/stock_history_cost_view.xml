@@ -33,9 +33,8 @@
 	                    ('datetime', '&lt;=', (context_today() + relativedelta(weekday=6)).strftime('%Y-%m-%d'))
 	                ]"
 	            />
-                <group expand="0" string="Group By">
-                    <filter string="Product" name="product" domain="[]" context="{'group_by':'name_product'}"/>
-
+                <group string="Group By">
+                    <filter string="Product" name="product" domain="[]" context="{'group_by':'product_id'}"/>
                 </group>
 			</search>
 		</field>
@@ -47,15 +46,15 @@
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="view_id" ref="stock_history_cost_tree_view"/>
-        <field name="context">{'default_product_id': active_id, 'search_default_product_id': active_id}</field>
         <field name="search_view_id" ref="stock_history_cost_search_view"/>
+        <field name="context">{'search_default_product_id': active_id, 'default_product_id': active_id}</field>
     </record>
-
+<!--
 	<menuitem
 		action="action_stock_cost_history"
 		name="Product Cost History"
 		parent="purchase.menu_purchase_control"
 		id="menu_stock_cost_history"
 		sequence="14"
-		/>
+		/> -->
 </odoo>

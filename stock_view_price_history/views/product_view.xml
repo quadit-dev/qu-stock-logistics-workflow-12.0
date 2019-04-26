@@ -15,7 +15,7 @@
                     type="action"
                     name='%(action_stock_cost_history)d'
                     string="Cost History"
-                    context="{'product_id': id}"/>
+                    context="{'default_product_id': id}"/>
             </xpath>
         </field>
     </record>
